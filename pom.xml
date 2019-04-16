@@ -3,7 +3,7 @@
 
     <groupId>org.vaadin.addons.lazyquerycontainer</groupId>
     <artifactId>vaadin-lazyquerycontainer-root</artifactId>
-    <version>7.6.1.4-SNAPSHOT</version>
+    <version>8.0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <scm>
@@ -53,8 +53,8 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>1.7</source>
-                    <target>1.7</target>
+                    <source>1.8</source>
+                    <target>1.8</target>
                 </configuration>
             </plugin>
             <plugin>
@@ -66,25 +66,10 @@
     </build>
 
     <repositories>
-        <repository>
-            <id>vaadin-snapshots</id>
-            <url>http://oss.sonatype.org/content/repositories/vaadin-snapshots/</url>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>EclipseLink Repo</id>
-            <url>http://www.eclipse.org/downloads/download.php?r=1&amp;nf=1&amp;file=/rt/eclipselink/maven.repo</url>
-        </repository>
     </repositories>
 
     <modules>
         <module>vaadin-lazyquerycontainer</module>
-        <module>vaadin-lazyquerycontainer-jpa-example</module>
         <module>vaadin-lazyquerycontainer-mock-example</module>
     </modules>
 
